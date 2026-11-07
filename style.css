@@ -1,0 +1,222 @@
+
+/* Pengaturan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    line-height: 1.6;
+}
+
+/* Header dan profil */
+header {
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.profile img {
+    width: 130px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+}
+
+.profile-info h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.profile-info p {
+    font-size: 14px;
+}
+
+/* Navigasi */
+nav {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+/* Bagian utama */
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 25px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+section h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+section p {
+    font-size: 14px;
+}
+
+/* Isi education dan experience */
+.content {
+    padding: 10px;
+}
+
+.content h3 {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.content ul {
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+/* Skills dan Portfolio */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.skill,
+.project {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.skill:hover,
+.project:hover {
+    background-color: #e0e0e0;
+    border-color: #333;
+}
+
+/* Form Contact */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-family: Arial, sans-serif;
+}
+
+form button,
+.print-section button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+form button:hover,
+.print-section button:hover {
+    background-color: #555;
+}
+
+/* Tombol Print */
+.print-section {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+}
+
+/* Tampilan HP */
+@media screen and (max-width: 600px) {
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main {
+        padding: 0 10px;
+    }
+}
+
+/* Tampilan Print */
+@media print {
+
+    nav,
+    .print-section,
+    form button {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    section {
+        break-inside: avoid;
+    }
+}
