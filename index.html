@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Digital - Farid Permana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="home">
+        <div class="profile">
+            <img src="assets/foto.jpg" alt="Foto Profil">
+
+            <div class="profile-info">
+                <h1>Farid Permana</h1>
+                <p>Mahasiswa Teknik Komputer</p>
+                <p>Bekasi, Indonesia</p>
+                <p>Email: emailkamu@gmail.com</p>
+                <p>Telepon: 08xxxxxxxxxx</p>
+                <p>LinkedIn: linkedin.com</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigasi -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <!-- About Me -->
+        <section id="about">
+            <h2>1. About Me</h2>
+            <p>
+                Saya adalah mahasiswa D3 Teknik Komputer di
+                Universitas Bani Saleh. Saya memiliki minat
+                dalam bidang teknologi komputer, pemrograman,
+                pengembangan website, dan jaringan komputer.
+                Saya senang mempelajari hal baru dan ingin
+                mengembangkan kemampuan di bidang teknologi.
+            </p>
+        </section>
+
+        <!-- Education -->
+        <section id="education">
+            <h2>2. Education</h2>
+
+            <div class="content">
+                <h3>Universitas Bani Saleh</h3>
+                <p>D3 Teknik Komputer</p>
+                <p>2022 - Sekarang</p>
+            </div>
+        </section>
+
+        <!-- Work Experience -->
+        <section id="experience">
+            <h2>3. Work Experience</h2>
+
+            <div class="content">
+                <h3>Sukmajaya Photo Digital</h3>
+                <p>Praktik Kerja Lapangan (PKL)</p>
+                <p>3 Januari 2023 - 3 April 2023</p>
+
+                <ul>
+                    <li>Melayani pelanggan untuk mencetak foto.</li>
+                    <li>Memindahkan foto dari HP dan kamera ke komputer.</li>
+                    <li>Mengedit foto menggunakan Photoshop.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2>4. Skills</h2>
+
+            <div class="grid">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">PHP</div>
+                <div class="skill">MySQL</div>
+                <div class="skill">Python</div>
+                <div class="skill">Networking</div>
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section id="portfolio">
+            <h2>5. Projects / Portfolio</h2>
+
+            <div class="grid">
+                <div class="project">
+                    <h3>Website CV Digital</h3>
+                    <p>Membuat website CV menggunakan HTML dan CSS.</p>
+                </div>
+
+                <div class="project">
+                    <h3>Database Mahasiswa</h3>
+                    <p>Membuat database menggunakan MySQL.</p>
+                </div>
+
+                <div class="project">
+                    <h3>Simulasi Jaringan</h3>
+                    <p>Membuat simulasi jaringan menggunakan Cisco Packet Tracer.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates -->
+        <section id="certificates">
+            <h2>6. Certificates</h2>
+
+            <div class="content">
+                <p>ICT Programming (Python) - World Friends Korea (2025)</p>
+                <p>Software Engineering Fundamentals - RevoU (2025)</p>
+                <p>Microsoft Office Certification - Universitas Bani Saleh (2025)</p>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>7. Contact</h2>
+
+            <p>Silakan kirim pesan melalui formulir berikut.</p>
+
+            <form action="mailto:emailkamu@gmail.com"
+                  method="post" enctype="text/plain">
+
+                <label>Nama:</label>
+                <input type="text" name="nama" placeholder="Masukkan nama" required>
+
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="Masukkan email" required>
+
+                <label>Pesan:</label>
+                <textarea name="pesan" rows="4"
+                          placeholder="Tulis pesan..." required></textarea>
+
+                <button type="submit">Kirim Pesan</button>
+            </form>
+        </section>
+
+        <!-- Tombol Print -->
+        <section class="print-section">
+            <button onclick="window.print()">Download / Print CV</button>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &copy; 2026 Farid Permana</p>
+    </footer>
+
+</body>
+</html>
